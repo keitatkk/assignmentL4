@@ -12,6 +12,12 @@ header,main,footer {
   font-family: arial,helvetica,sans-serif;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* header */
 header {
   width: 100%;
@@ -39,6 +45,9 @@ header .heading a{
 /* main */
 main {
   background-color: #ecfcdf;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
 }
 .profile{
   padding: 10px 40px 40px 40px;
@@ -92,6 +101,7 @@ footer {
   background-color: darkgreen;
   text-align: center;
   line-height: 100px;
+  bottom: 0;
 }
 .footer-text{
   color: #fff;
@@ -102,6 +112,7 @@ footer {
   }
   .profile-image-box{
     width: 100%;
+    margin-right: 0;
   }
   .profile-message-box{
     width: 100%;
