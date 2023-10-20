@@ -1,0 +1,109 @@
+/* ブラウザが持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+a{
+  text-decoration: none;
+}
+header,main,footer {
+  font-family: arial,helvetica,sans-serif;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: darkgreen;
+}
+header .heading a{
+  color:#fff;
+}
+.nav-list a {
+  color:#38b48b;
+}
+.nav-list{
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.nav-list-item{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  color:#fff
+}
+/* main */
+main {
+  background-color: #ecfcdf;
+}
+.profile{
+  padding: 10px 40px 40px 40px;
+}
+.profile-heading{
+  padding-bottom:10px ;
+  text-align: center;
+}
+.profile-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile-image-box{
+  width: 30%;
+  margin-right: 10px;
+}
+.profile-image{
+  width: 100%;
+  border-radius: 10px;
+}
+.profile-message-box{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  padding: 0 10px;
+}
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 40px;
+}
+.profile-message-label{
+  width: 100px;
+  font-weight: bold;
+}
+.row-social {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 20px;
+}
+.social i {
+  margin: 0 20px 20px 0;
+  padding: 0;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+  text-align: center;
+  line-height: 100px;
+}
+.footer-text{
+  color: #fff;
+}
+@media screen and (max-width:768px) {
+  .profile-box{
+    flex-wrap: wrap;
+  }
+  .profile-image-box{
+    width: 100%;
+  }
+  .profile-message-box{
+    width: 100%;
+  }
+}
